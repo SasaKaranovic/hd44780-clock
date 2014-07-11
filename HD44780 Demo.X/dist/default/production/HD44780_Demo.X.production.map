@@ -1,0 +1,2137 @@
+Microchip MPLAB XC8 Compiler V1.30 ()
+
+Linker command line:
+
+--edf=C:\Program Files (x86)\Microchip\xc8\v1.30\dat\en_msgs.txt -cs \
+  -h+dist/default/production\HD44780_Demo.X.production.sym \
+  --cmf=dist/default/production\HD44780_Demo.X.production.cmf -z -Q16F1825 \
+  -oC:\Users\Sale\AppData\Local\Temp\s48g.6 \
+  -Mdist/default/production/HD44780_Demo.X.production.map -E1 -ver=XC8 \
+  -ASTACK=020E0h-0231fh -pstack=STACK -ACONST=00h-0FFhx32 \
+  -ACODE=00h-07FFhx4 -ASTRCODE=00h-01FFFh -AENTRY=00h-0FFhx32 \
+  -ASTRING=00h-0FFhx32 -ACOMMON=070h-07Fh -ABANK0=020h-06Fh \
+  -ABANK1=0A0h-0EFh -ABANK2=0120h-016Fh -ABANK3=01A0h-01EFh \
+  -ABANK4=0220h-026Fh -ABANK5=02A0h-02EFh -ABANK6=0320h-036Fh \
+  -ABANK7=03A0h-03EFh -ABANK8=0420h-046Fh -ABANK9=04A0h-04EFh \
+  -ABANK10=0520h-056Fh -ABANK11=05A0h-05EFh -ABANK12=0620h-064Fh \
+  -ABIGRAM=02000h-023EFh \
+  -ARAM=020h-06Fh,0A0h-0EFh,0120h-016Fh,01A0h-01EFh,0220h-026Fh,02A0h-02EFh,0320h-036Fh,03A0h-03EFh,0420h-046Fh,04A0h-04EFh,0520h-056Fh,05A0h-05EFh,0620h-064Fh \
+  -AABS1=020h-07Fh,0A0h-0EFh,0120h-016Fh,01A0h-01EFh,0220h-026Fh,02A0h-02EFh,0320h-036Fh,03A0h-03EFh,0420h-046Fh,04A0h-04EFh,0520h-056Fh,05A0h-05EFh,0620h-064Fh \
+  -ASFR0=00h-01Fh -ASFR1=080h-09Fh -ASFR2=0100h-011Fh -ASFR3=0180h-019Fh \
+  -ASFR4=0200h-021Fh -ASFR5=0280h-029Fh -ASFR6=0300h-031Fh \
+  -ASFR7=0380h-039Fh -ASFR8=0400h-041Fh -ASFR9=0480h-049Fh \
+  -ASFR10=0500h-051Fh -ASFR11=0580h-059Fh -ASFR12=0600h-061Fh \
+  -ASFR13=0680h-06EFh -ASFR14=0700h-076Fh -ASFR15=0780h-07EFh \
+  -ASFR16=0800h-086Fh -ASFR17=0880h-08EFh -ASFR18=0900h-096Fh \
+  -ASFR19=0980h-09EFh -ASFR20=0A00h-0A6Fh -ASFR21=0A80h-0AEFh \
+  -ASFR22=0B00h-0B6Fh -ASFR23=0B80h-0BEFh -ASFR24=0C00h-0C6Fh \
+  -ASFR25=0C80h-0CEFh -ASFR26=0D00h-0D6Fh -ASFR27=0D80h-0DEFh \
+  -ASFR28=0E00h-0E6Fh -ASFR29=0E80h-0EEFh -ASFR30=0F00h-0F6Fh \
+  -ASFR31=0F80h-0FEFh -preset_vec=00h,intentry=04h,init,end_init \
+  -ppowerup=CODE -pcinit=CODE -pfunctab=CODE -ACONFIG=08007h-08008h \
+  -pconfig=CONFIG -DCONFIG=2 -AIDLOC=08000h-08003h -pidloc=IDLOC -DIDLOC=2 \
+  -AEEDATA=00h-0FFh/0F000h -peeprom_data=EEDATA -DEEDATA=2 -DCODE=2 \
+  -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 -k \
+  C:\Users\Sale\AppData\Local\Temp\s48g.obj \
+  dist/default/production\HD44780_Demo.X.production.obj 
+
+Object code version is 3.11
+
+Machine type is 16F1825
+
+
+
+                Name                               Link     Load   Length Selector   Space Scale
+C:\Users\Sale\AppData\Local\Temp\s48g.obj
+                end_init                             36       36        2        8       0
+                reset_vec                             0        0        2        0       0
+                config                             8007     8007        2    1000E       0
+dist/default/production\HD44780_Demo.X.production.obj
+                cinit                                38       38       22        8       0
+                intentry                              4        4       32        8       0
+                text31                              C0C      C0C        A     1818       0
+                text30                              F59      F59       53     1EB2       0
+                text29                              C4F      C4F       24     189E       0
+                text28                              FAC      FAC       54     1F58       0
+                text27                              DDF      DDF       48     1BBE       0
+                text26                              53F      53F       9E        8       0
+                text25                              D56      D56       43     1AAC       0
+                text24                              EBB      EBB       4E     1D76       0
+                text22                              5F3      5F3        B        8       0
+                text21                              F09      F09       50     1E12       0
+                text20                              7D6      7D6       24      CD0       0
+                text19                              D99      D99       46     1B32       0
+                text18                              C16      C16       12     182C       0
+                text17                              6C9      6C9       5E      CD0       0
+                text16                              CD9      CD9       3D     19B2       0
+                text15                              C28      C28       12     1850       0
+                text14                              3E8      3E8       B0        8       0
+                text13                              183      183       E3        8       0
+                text12                              E6F      E6F       4C     1CDE       0
+                text11                              CA2      CA2       37     1944       0
+                text10                              C73      C73       2F     18E6       0
+                text9                               266      266       CD        8       0
+                text8                               727      727       5B      CD0       0
+                text7                               5DD      5DD       16        8       0
+                text6                               782      782       54      CD0       0
+                text5                               E27      E27       48     1C4E       0
+                text4                               498      498       A7        8       0
+                text3                               333      333       B5        8       0
+                text2                               668      668       61      CD0       0
+                text1                               C3A      C3A       15     1874       0
+                maintext                             5A       5A      129        8       0
+                cstackBANK0                          20       20       22       20       1
+                cstackCOMMON                         70       70        E       70       1
+                cstackBANK1                          B5       B5       10       A0       1
+                inittext                            C06      C06        6     180C       0
+                clrtext                             7FA      7FA        6      CD0       0
+                dataBANK2                           120      120       40      120       1
+                bssBANK1                             A0       A0       15       A0       1
+                dataBANK0                            5D       5D        1       20       1
+                bssBANK0                             42       42       1B       20       1
+                strings                             600      600       68      C00       0
+                idataBANK2                          D16      D16       40     1A2C       0
+                idataBANK0                          5FE      5FE        1        8       0
+
+TOTAL           Name                               Link     Load   Length     Space
+        CLASS   STACK          
+
+        CLASS   CONST          
+
+        CLASS   CODE           
+                end_init                             36       36        2         0
+                cinit                                38       38       22         0
+                intentry                              4        4       32         0
+                reset_vec                             0        0        2         0
+                text31                              C0C      C0C        A         0
+                text30                              F59      F59       53         0
+                text29                              C4F      C4F       24         0
+                text28                              FAC      FAC       54         0
+                text27                              DDF      DDF       48         0
+                text26                              53F      53F       9E         0
+                text25                              D56      D56       43         0
+                text24                              EBB      EBB       4E         0
+                text22                              5F3      5F3        B         0
+                text21                              F09      F09       50         0
+                text20                              7D6      7D6       24         0
+                text19                              D99      D99       46         0
+                text18                              C16      C16       12         0
+                text17                              6C9      6C9       5E         0
+                text16                              CD9      CD9       3D         0
+                text15                              C28      C28       12         0
+                text14                              3E8      3E8       B0         0
+                text13                              183      183       E3         0
+                text12                              E6F      E6F       4C         0
+                text11                              CA2      CA2       37         0
+                text10                              C73      C73       2F         0
+                text9                               266      266       CD         0
+                text8                               727      727       5B         0
+                text7                               5DD      5DD       16         0
+                text6                               782      782       54         0
+                text5                               E27      E27       48         0
+                text4                               498      498       A7         0
+                text3                               333      333       B5         0
+                text2                               668      668       61         0
+                text1                               C3A      C3A       15         0
+                maintext                             5A       5A      129         0
+                inittext                            C06      C06        6         0
+                clrtext                             7FA      7FA        6         0
+                idataBANK2                          D16      D16       40         0
+                idataBANK0                          5FE      5FE        1         0
+
+        CLASS   STRCODE        
+
+        CLASS   ENTRY          
+
+        CLASS   STRING         
+                strings                             600      600       68         0
+
+        CLASS   COMMON         
+                cstackCOMMON                         70       70        E         1
+
+        CLASS   BANK0          
+                cstackBANK0                          20       20       22         1
+                dataBANK0                            5D       5D        1         1
+                bssBANK0                             42       42       1B         1
+
+        CLASS   BANK1          
+                cstackBANK1                          B5       B5       10         1
+                bssBANK1                             A0       A0       15         1
+
+        CLASS   BANK2          
+                dataBANK2                           120      120       40         1
+
+        CLASS   BANK3          
+
+        CLASS   BANK4          
+
+        CLASS   BANK5          
+
+        CLASS   BANK6          
+
+        CLASS   BANK7          
+
+        CLASS   BANK8          
+
+        CLASS   BANK9          
+
+        CLASS   BANK10         
+
+        CLASS   BANK11         
+
+        CLASS   BANK12         
+
+        CLASS   BIGRAM         
+
+        CLASS   RAM            
+
+        CLASS   ABS1           
+                abs_s1                               7E       7E        2         1
+
+        CLASS   SFR0           
+
+        CLASS   SFR1           
+
+        CLASS   SFR2           
+
+        CLASS   SFR3           
+
+        CLASS   SFR4           
+
+        CLASS   SFR5           
+
+        CLASS   SFR6           
+
+        CLASS   SFR7           
+
+        CLASS   SFR8           
+
+        CLASS   SFR9           
+
+        CLASS   SFR10          
+
+        CLASS   SFR11          
+
+        CLASS   SFR12          
+
+        CLASS   SFR13          
+
+        CLASS   SFR14          
+
+        CLASS   SFR15          
+
+        CLASS   SFR16          
+
+        CLASS   SFR17          
+
+        CLASS   SFR18          
+
+        CLASS   SFR19          
+
+        CLASS   SFR20          
+
+        CLASS   SFR21          
+
+        CLASS   SFR22          
+
+        CLASS   SFR23          
+
+        CLASS   SFR24          
+
+        CLASS   SFR25          
+
+        CLASS   SFR26          
+
+        CLASS   SFR27          
+
+        CLASS   SFR28          
+
+        CLASS   SFR29          
+
+        CLASS   SFR30          
+
+        CLASS   SFR31          
+
+        CLASS   CONFIG         
+                config                             8007     8007        2         0
+
+        CLASS   IDLOC          
+
+        CLASS   EEDATA         
+
+        CLASS   BANK31         
+
+        CLASS   BANK30         
+
+        CLASS   BANK29         
+
+        CLASS   BANK28         
+
+        CLASS   BANK27         
+
+        CLASS   BANK26         
+
+        CLASS   BANK25         
+
+        CLASS   BANK24         
+
+        CLASS   BANK23         
+
+        CLASS   BANK22         
+
+        CLASS   BANK21         
+
+        CLASS   BANK20         
+
+        CLASS   BANK19         
+
+        CLASS   BANK18         
+
+        CLASS   BANK17         
+
+        CLASS   BANK16         
+
+        CLASS   BANK15         
+
+        CLASS   BANK14         
+
+        CLASS   BANK13         
+
+
+
+SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class     Delta
+
+                reset_vec                      000000  000002  000002         0       0  CODE        2
+                intentry                       000004  0005FB  0005FF         8       0  CODE        2
+                cstackBANK0                    000020  00003E  00005E        20       1  BANK0       1
+                cstackCOMMON                   000070  00000E  00007E        70       1  COMMON      1
+                bssBANK1                       0000A0  000025  0000C5        A0       1  BANK1       1
+                dataBANK2                      000120  000040  000160       120       1  BANK2       1
+                strings                        000600  000068  000668       C00       0  STRING      2
+                text2                          000668  000198  000800       CD0       0  CODE        2
+                inittext                       000C06  000006  000C0C      180C       0  CODE        2
+                text31                         000C0C  00000A  000C16      1818       0  CODE        2
+                text18                         000C16  000012  000C28      182C       0  CODE        2
+                text15                         000C28  000012  000C3A      1850       0  CODE        2
+                text1                          000C3A  000015  000C4F      1874       0  CODE        2
+                text29                         000C4F  000024  000C73      189E       0  CODE        2
+                text10                         000C73  00002F  000CA2      18E6       0  CODE        2
+                text11                         000CA2  000037  000CD9      1944       0  CODE        2
+                text16                         000CD9  00003D  000D16      19B2       0  CODE        2
+                idataBANK2                     000D16  000040  000D56      1A2C       0  CODE        2
+                text25                         000D56  000043  000D99      1AAC       0  CODE        2
+                text19                         000D99  000046  000DDF      1B32       0  CODE        2
+                text27                         000DDF  000048  000E27      1BBE       0  CODE        2
+                text5                          000E27  000048  000E6F      1C4E       0  CODE        2
+                text12                         000E6F  00004C  000EBB      1CDE       0  CODE        2
+                text24                         000EBB  00004E  000F09      1D76       0  CODE        2
+                text21                         000F09  000050  000F59      1E12       0  CODE        2
+                text30                         000F59  000053  000FAC      1EB2       0  CODE        2
+                text28                         000FAC  000054  001000      1F58       0  CODE        2
+                config                         008007  000002  008009     1000E       0  CONFIG      2
+
+
+UNUSED ADDRESS RANGES
+
+        Name                Unused          Largest block    Delta
+        BANK0            0005E-0006F              12           1
+        BANK1            000C5-000EF              2B           1
+        BANK10           00520-0056F              50           1
+        BANK11           005A0-005EF              50           1
+        BANK12           00620-0064F              30           1
+        BANK2            00160-0016F              10           1
+        BANK3            001A0-001EF              50           1
+        BANK4            00220-0026F              50           1
+        BANK5            002A0-002EF              50           1
+        BANK6            00320-0036F              50           1
+        BANK7            003A0-003EF              50           1
+        BANK8            00420-0046F              50           1
+        BANK9            004A0-004EF              50           1
+        BIGRAM           02000-023EF             3F0           1
+        CODE             00002-00003               2           2
+                         005FF-005FF               1
+                         00800-00C05             406
+                         01000-01FFF             800
+        CONST            00002-00003               2           2
+                         005FF-005FF               1
+                         00800-00C05             100
+                         01000-01FFF             100
+        EEDATA           0F000-0F0FF             100           2
+        ENTRY            00002-00003               2           2
+                         005FF-005FF               1
+                         00800-00C05             100
+                         01000-01FFF             100
+        IDLOC            08000-08003               4           2
+        RAM              0005E-0006F              12           1
+                         000C5-000EF              2B
+                         00160-0016F              10
+                         001A0-001EF              50
+                         00220-0026F              50
+                         002A0-002EF              50
+                         00320-0036F              50
+                         003A0-003EF              50
+                         00420-0046F              50
+                         004A0-004EF              50
+                         00520-0056F              50
+                         005A0-005EF              50
+                         00620-0064F              30
+        SFR0             00000-0001F              20           1
+        SFR1             00080-0009F              20           1
+        SFR10            00500-0051F              20           1
+        SFR11            00580-0059F              20           1
+        SFR12            00600-0061F              20           1
+        SFR13            00680-006EF              70           1
+        SFR14            00700-0076F              70           1
+        SFR15            00780-007EF              70           1
+        SFR16            00800-0086F              70           1
+        SFR17            00880-008EF              70           1
+        SFR18            00900-0096F              70           1
+        SFR19            00980-009EF              70           1
+        SFR2             00100-0011F              20           1
+        SFR20            00A00-00A6F              70           1
+        SFR21            00A80-00AEF              70           1
+        SFR22            00B00-00B6F              70           1
+        SFR23            00B80-00BEF              70           1
+        SFR24            00C00-00C6F              70           1
+        SFR25            00C80-00CEF              70           1
+        SFR26            00D00-00D6F              70           1
+        SFR27            00D80-00DEF              70           1
+        SFR28            00E00-00E6F              70           1
+        SFR29            00E80-00EEF              70           1
+        SFR3             00180-0019F              20           1
+        SFR30            00F00-00F6F              70           1
+        SFR31            00F80-00FEF              70           1
+        SFR4             00200-0021F              20           1
+        SFR5             00280-0029F              20           1
+        SFR6             00300-0031F              20           1
+        SFR7             00380-0039F              20           1
+        SFR8             00400-0041F              20           1
+        SFR9             00480-0049F              20           1
+        STACK            020E0-0231F             240           1
+        STRCODE          00002-00003               2           2
+                         005FF-005FF               1
+                         00800-00C05             406
+                         01000-01FFF            1000
+        STRING           00002-00003               2           2
+                         005FF-005FF               1
+                         00800-00C05             100
+                         01000-01FFF             100
+
+                                  Symbol Table
+
+?___awdiv                        cstackBANK0  00031
+?___awmod                        cstackBANK0  00031
+?___lwdiv                        cstackBANK0  00031
+?___lwmod                        cstackBANK0  00031
+?i1___awdiv                      cstackCOMMON 00070
+?i1___awmod                      cstackCOMMON 00070
+DS1307_ReadDate@F2872            bssBANK1     000A5
+DS1307_ReadDate@SaveDateTo       cstackBANK1  000BA
+DS1307_ReadDate@Temp             cstackBANK1  000BB
+DS1307_ReadDate@TempI2CRead      cstackBANK1  000B6
+DS1307_ReadDate@result           cstackBANK1  000B5
+DS1307_ReadTime@F2859            bssBANK1     000A9
+DS1307_ReadTime@SaveTimeTo       cstackBANK1  000BA
+DS1307_ReadTime@Temp             cstackBANK1  000BB
+DS1307_ReadTime@TempI2CRead      cstackBANK1  000B6
+DS1307_ReadTime@result           cstackBANK1  000B5
+DS1307_SetDate@F2867             bssBANK1     000A0
+DS1307_SetTime@F2848             bssBANK1     000AD
+DS1307_SetTime@Hours             cstackBANK0  00039
+DS1307_SetTime@Mins              cstackBANK0  0003B
+DS1307_SetTime@Mode              cstackBANK0  0003F
+DS1307_SetTime@Secs              cstackBANK0  0003D
+DS1307_SetTime@Temp              cstackBANK1  000BA
+DS1307_SetTime@result            cstackBANK1  000B9
+Debug@data                       cstackBANK0  0003D
+I2C1_ReadFrame@i2c1FrameLength   cstackBANK0  00032
+I2C1_ReadFrame@i2c1ReadPointer   cstackBANK0  00031
+I2C1_ReadFrame@i2c1SlaveAddress  cstackBANK0  00034
+I2C1_WriteByte@i2c1Data          cstackBANK0  00031
+I2C1_WriteByte@i2c1SlaveAddress  cstackBANK0  00032
+I2C1_WriteFrame@i2c1FrameLength  cstackBANK0  00032
+I2C1_WriteFrame@i2c1SlaveAddress cstackBANK0  00034
+I2C1_WriteFrame@i2c1WritePointer cstackBANK0  00031
+LCDByte@c                        cstackBANK0  00038
+LCDByte@hn                       cstackBANK0  00036
+LCDByte@isdata                   cstackBANK0  00033
+LCDByte@ln                       cstackBANK0  00037
+LCDByte@temp                     cstackBANK0  00039
+LCDGotoXY@x                      cstackBANK0  0003C
+LCDGotoXY@y                      cstackBANK0  0003A
+LCDInit@__i                      cstackBANK0  0003E
+LCDInit@style                    cstackBANK0  0003D
+LCDWriteInt@F2719                bssBANK0     00042
+LCDWriteInt@field_length         cstackBANK0  0003C
+LCDWriteInt@i                    cstackBANK1  000BC
+LCDWriteInt@j                    cstackBANK1  000BA
+LCDWriteInt@str                  cstackBANK1  000B5
+LCDWriteInt@val                  cstackBANK0  0003A
+LCDWriteString@cc                cstackBANK0  0003B
+LCDWriteString@msg               cstackBANK0  0003C
+ShowDate@clear                   cstackBANK0  00040
+ShowDate@x                       cstackBANK0  00041
+ShowDate@y                       cstackBANK0  0003F
+ShowTime@clear                   cstackBANK0  00040
+ShowTime@x                       cstackBANK0  00041
+ShowTime@y                       cstackBANK0  0003F
+_ANSELA                          (abs)        0018C
+_ANSELC                          (abs)        0018E
+_DS1307_ReadDate                 text14       003E8
+_DS1307_ReadTime                 text13       00183
+_DS1307_SetTime                  text9        00266
+_DateArray                       bssBANK0     00054
+_Debug                           text18       00C16
+_FlagDateTimeChanged             bssBANK0     0004B
+_HourBlink                       dataBANK0    0005D
+_I2C1_ReadFrame                  text17       006C9
+_I2C1_STATE                      bssBANK0     0004C
+_I2C1_WriteByte                  text16       00CD9
+_I2C1_WriteFrame                 text12       00E6F
+_I2CTime                         bssBANK1     000B1
+_INTCONbits                      (abs)        0000B
+_ISRRoutine                      intentry     00004
+_LCDBusyLoop                     text22       005F3
+_LCDByte                         text21       00F09
+_LCDGotoXY                       text20       007D6
+_LCDInit                         text8        00727
+_LCDWriteInt                     text4        00498
+_LCDWriteString                  text19       00D99
+_OPTION_REGbits                  (abs)        00095
+_OSCCONbits                      (abs)        00099
+_PIR2bits                        (abs)        00012
+_PORTAbits                       (abs)        0000C
+_PORTC                           (abs)        0000E
+_RA0                             (abs)        00060
+_RA1                             (abs)        00061
+_RA2                             (abs)        00062
+_RTCStart                        strings      00601
+_RefreshTime                     bssBANK0     00047
+_SSP1BUF                         (abs)        00211
+_SSP1CON1                        (abs)        00215
+_SSP1CON1bits                    (abs)        00215
+_SSP1CON2bits                    (abs)        00216
+_SSP1CON3bits                    (abs)        00217
+_SSP1MSK                         (abs)        00213
+_SSP1STATbits                    (abs)        00214
+_SSPADD                          (abs)        00212
+_SetUpDevice                     text7        005DD
+_ShowDate                        text3        00333
+_ShowTime                        text2        00668
+_TMR0IE                          (abs)        0005D
+_TMR0IF                          (abs)        0005A
+_TRISAbits                       (abs)        0008C
+_TRISC                           (abs)        0008E
+_TRISCbits                       (abs)        0008E
+_TimeArray                       bssBANK0     00059
+_Timer0Count                     bssBANK0     00049
+__CFG_BOREN$ON                   (abs)        00000
+__CFG_BORV$LO                    (abs)        00000
+__CFG_CLKOUTEN$OFF               (abs)        00000
+__CFG_CP$OFF                     (abs)        00000
+__CFG_CPD$OFF                    (abs)        00000
+__CFG_FCMEN$ON                   (abs)        00000
+__CFG_FOSC$INTOSC                (abs)        00000
+__CFG_IESO$ON                    (abs)        00000
+__CFG_LVP$ON                     (abs)        00000
+__CFG_MCLRE$ON                   (abs)        00000
+__CFG_PLLEN$ON                   (abs)        00000
+__CFG_PWRTE$OFF                  (abs)        00000
+__CFG_STVREN$ON                  (abs)        00000
+__CFG_WDTE$OFF                   (abs)        00000
+__CFG_WRT$OFF                    (abs)        00000
+__Habs1                          abs1         00000
+__Hbank0                         bank0        00000
+__Hbank1                         bank1        00000
+__Hbank10                        bank10       00000
+__Hbank11                        bank11       00000
+__Hbank12                        bank12       00000
+__Hbank13                        bank13       00000
+__Hbank14                        bank14       00000
+__Hbank15                        bank15       00000
+__Hbank16                        bank16       00000
+__Hbank17                        bank17       00000
+__Hbank18                        bank18       00000
+__Hbank19                        bank19       00000
+__Hbank2                         bank2        00000
+__Hbank20                        bank20       00000
+__Hbank21                        bank21       00000
+__Hbank22                        bank22       00000
+__Hbank23                        bank23       00000
+__Hbank24                        bank24       00000
+__Hbank25                        bank25       00000
+__Hbank26                        bank26       00000
+__Hbank27                        bank27       00000
+__Hbank28                        bank28       00000
+__Hbank29                        bank29       00000
+__Hbank3                         bank3        00000
+__Hbank30                        bank30       00000
+__Hbank31                        bank31       00000
+__Hbank4                         bank4        00000
+__Hbank5                         bank5        00000
+__Hbank6                         bank6        00000
+__Hbank7                         bank7        00000
+__Hbank8                         bank8        00000
+__Hbank9                         bank9        00000
+__Hbigram                        bigram       00000
+__HbssBANK0                      bssBANK0     00000
+__HbssBANK1                      bssBANK1     00000
+__Hcinit                         cinit        0005A
+__Hclrtext                       clrtext      00000
+__Hcode                          code         00000
+__Hcommon                        common       00000
+__Hconfig                        config       08009
+__HcstackBANK0                   cstackBANK0  00000
+__HcstackBANK1                   cstackBANK1  00000
+__HcstackCOMMON                  cstackCOMMON 00000
+__HdataBANK0                     dataBANK0    00000
+__HdataBANK2                     dataBANK2    00000
+__Heeprom_data                   eeprom_data  00000
+__Hend_init                      end_init     00038
+__Hfunctab                       functab      00000
+__HidataBANK0                    idataBANK0   00000
+__HidataBANK2                    idataBANK2   00000
+__Hidloc                         idloc        00000
+__Hinit                          init         00036
+__Hinittext                      inittext     00000
+__Hintentry                      intentry     00036
+__Hmaintext                      maintext     00000
+__Hpowerup                       powerup      00000
+__Hram                           ram          00000
+__Hreset_vec                     reset_vec    00002
+__Hsfr0                          sfr0         00000
+__Hsfr1                          sfr1         00000
+__Hsfr10                         sfr10        00000
+__Hsfr11                         sfr11        00000
+__Hsfr12                         sfr12        00000
+__Hsfr13                         sfr13        00000
+__Hsfr14                         sfr14        00000
+__Hsfr15                         sfr15        00000
+__Hsfr16                         sfr16        00000
+__Hsfr17                         sfr17        00000
+__Hsfr18                         sfr18        00000
+__Hsfr19                         sfr19        00000
+__Hsfr2                          sfr2         00000
+__Hsfr20                         sfr20        00000
+__Hsfr21                         sfr21        00000
+__Hsfr22                         sfr22        00000
+__Hsfr23                         sfr23        00000
+__Hsfr24                         sfr24        00000
+__Hsfr25                         sfr25        00000
+__Hsfr26                         sfr26        00000
+__Hsfr27                         sfr27        00000
+__Hsfr28                         sfr28        00000
+__Hsfr29                         sfr29        00000
+__Hsfr3                          sfr3         00000
+__Hsfr30                         sfr30        00000
+__Hsfr31                         sfr31        00000
+__Hsfr4                          sfr4         00000
+__Hsfr5                          sfr5         00000
+__Hsfr6                          sfr6         00000
+__Hsfr7                          sfr7         00000
+__Hsfr8                          sfr8         00000
+__Hsfr9                          sfr9         00000
+__Hstack                         stack        00000
+__Hstrings                       strings      00000
+__Htext                          text         00000
+__Labs1                          abs1         00000
+__Lbank0                         bank0        00000
+__Lbank1                         bank1        00000
+__Lbank10                        bank10       00000
+__Lbank11                        bank11       00000
+__Lbank12                        bank12       00000
+__Lbank13                        bank13       00000
+__Lbank14                        bank14       00000
+__Lbank15                        bank15       00000
+__Lbank16                        bank16       00000
+__Lbank17                        bank17       00000
+__Lbank18                        bank18       00000
+__Lbank19                        bank19       00000
+__Lbank2                         bank2        00000
+__Lbank20                        bank20       00000
+__Lbank21                        bank21       00000
+__Lbank22                        bank22       00000
+__Lbank23                        bank23       00000
+__Lbank24                        bank24       00000
+__Lbank25                        bank25       00000
+__Lbank26                        bank26       00000
+__Lbank27                        bank27       00000
+__Lbank28                        bank28       00000
+__Lbank29                        bank29       00000
+__Lbank3                         bank3        00000
+__Lbank30                        bank30       00000
+__Lbank31                        bank31       00000
+__Lbank4                         bank4        00000
+__Lbank5                         bank5        00000
+__Lbank6                         bank6        00000
+__Lbank7                         bank7        00000
+__Lbank8                         bank8        00000
+__Lbank9                         bank9        00000
+__Lbigram                        bigram       00000
+__LbssBANK0                      bssBANK0     00000
+__LbssBANK1                      bssBANK1     00000
+__Lcinit                         cinit        00038
+__Lclrtext                       clrtext      00000
+__Lcode                          code         00000
+__Lcommon                        common       00000
+__Lconfig                        config       08007
+__LcstackBANK0                   cstackBANK0  00000
+__LcstackBANK1                   cstackBANK1  00000
+__LcstackCOMMON                  cstackCOMMON 00000
+__LdataBANK0                     dataBANK0    00000
+__LdataBANK2                     dataBANK2    00000
+__Leeprom_data                   eeprom_data  00000
+__Lend_init                      end_init     00036
+__Lfunctab                       functab      00000
+__LidataBANK0                    idataBANK0   00000
+__LidataBANK2                    idataBANK2   00000
+__Lidloc                         idloc        00000
+__Linit                          init         00036
+__Linittext                      inittext     00000
+__Lintentry                      intentry     00004
+__Lmaintext                      maintext     00000
+__Lpowerup                       powerup      00000
+__Lram                           ram          00000
+__Lreset_vec                     reset_vec    00000
+__Lsfr0                          sfr0         00000
+__Lsfr1                          sfr1         00000
+__Lsfr10                         sfr10        00000
+__Lsfr11                         sfr11        00000
+__Lsfr12                         sfr12        00000
+__Lsfr13                         sfr13        00000
+__Lsfr14                         sfr14        00000
+__Lsfr15                         sfr15        00000
+__Lsfr16                         sfr16        00000
+__Lsfr17                         sfr17        00000
+__Lsfr18                         sfr18        00000
+__Lsfr19                         sfr19        00000
+__Lsfr2                          sfr2         00000
+__Lsfr20                         sfr20        00000
+__Lsfr21                         sfr21        00000
+__Lsfr22                         sfr22        00000
+__Lsfr23                         sfr23        00000
+__Lsfr24                         sfr24        00000
+__Lsfr25                         sfr25        00000
+__Lsfr26                         sfr26        00000
+__Lsfr27                         sfr27        00000
+__Lsfr28                         sfr28        00000
+__Lsfr29                         sfr29        00000
+__Lsfr3                          sfr3         00000
+__Lsfr30                         sfr30        00000
+__Lsfr31                         sfr31        00000
+__Lsfr4                          sfr4         00000
+__Lsfr5                          sfr5         00000
+__Lsfr6                          sfr6         00000
+__Lsfr7                          sfr7         00000
+__Lsfr8                          sfr8         00000
+__Lsfr9                          sfr9         00000
+__Lstack                         stack        00000
+__Lstrings                       strings      00000
+__Ltext                          text         00000
+__S0                             (abs)        08009
+__S1                             (abs)        00160
+__S2                             (abs)        00000
+__S3                             (abs)        00000
+___awdiv                         text6        00782
+___awdiv@counter                 cstackBANK0  00036
+___awdiv@dividend                cstackBANK0  00033
+___awdiv@divisor                 cstackBANK0  00031
+___awdiv@quotient                cstackBANK0  00038
+___awdiv@sign                    cstackBANK0  00037
+___awmod                         text5        00E27
+___awmod@counter                 cstackBANK0  00036
+___awmod@dividend                cstackBANK0  00033
+___awmod@divisor                 cstackBANK0  00031
+___awmod@sign                    cstackBANK0  00037
+___bmul                          text15       00C28
+___bmul@multiplicand             cstackBANK0  00031
+___bmul@multiplier               cstackBANK0  00034
+___bmul@product                  cstackBANK0  00033
+___cgram                         dataBANK2    00120
+___int_sp                        stack        00000
+___latbits                       (abs)        00002
+___lwdiv                         text11       00CA2
+___lwdiv@counter                 cstackBANK0  00036
+___lwdiv@dividend                cstackBANK0  00033
+___lwdiv@divisor                 cstackBANK0  00031
+___lwdiv@quotient                cstackBANK0  00037
+___lwmod                         text10       00C73
+___lwmod@counter                 cstackBANK0  00036
+___lwmod@dividend                cstackBANK0  00033
+___lwmod@divisor                 cstackBANK0  00031
+___sp                            stack        00000
+__end_of_DS1307_ReadDate         text14       00498
+__end_of_DS1307_ReadTime         text13       00266
+__end_of_DS1307_SetTime          text9        00333
+__end_of_Debug                   text18       00C28
+__end_of_I2C1_ReadFrame          text17       00727
+__end_of_I2C1_WriteByte          text16       00D16
+__end_of_I2C1_WriteFrame         text12       00EBB
+__end_of_ISRRoutine              intentry     00036
+__end_of_LCDBusyLoop             text22       005FE
+__end_of_LCDByte                 text21       00F59
+__end_of_LCDGotoXY               text20       007FA
+__end_of_LCDInit                 text8        00782
+__end_of_LCDWriteInt             text4        0053F
+__end_of_LCDWriteString          text19       00DDF
+__end_of_RTCStart                strings      00603
+__end_of_SetUpDevice             text7        005F3
+__end_of_ShowDate                text3        003E8
+__end_of_ShowTime                text2        006C9
+__end_of___awdiv                 text6        007D6
+__end_of___awmod                 text5        00E6F
+__end_of___bmul                  text15       00C3A
+__end_of___lwdiv                 text11       00CD9
+__end_of___lwmod                 text10       00CA2
+__end_of__initialization         cinit        00057
+__end_of__stringdata             strings      00668
+__end_of__stringtab              strings      00601
+__end_of_i2c_init                text1        00C4F
+__end_of_main                    maintext     00183
+__end_ofi1_LCDBusyLoop           text31       00C16
+__end_ofi1_LCDByte               text30       00FAC
+__end_ofi1_LCDGotoXY             text29       00C73
+__end_ofi1_LCDWriteInt           text26       005DD
+__end_ofi1_LCDWriteString        text25       00D99
+__end_ofi1_ShowTime              text24       00F09
+__end_ofi1___awdiv               text28       01000
+__end_ofi1___awmod               text27       00E27
+__initialization                 cinit        00038
+__pbssBANK0                      bssBANK0     00042
+__pbssBANK1                      bssBANK1     000A0
+__pcstackBANK0                   cstackBANK0  00020
+__pcstackBANK1                   cstackBANK1  000B5
+__pcstackCOMMON                  cstackCOMMON 00070
+__pdataBANK0                     dataBANK0    0005D
+__pdataBANK2                     dataBANK2    00120
+__pidataBANK0                    idataBANK0   005FE
+__pidataBANK2                    idataBANK2   00D16
+__pintentry                      intentry     00004
+__pmaintext                      maintext     0005A
+__pstrings                       strings      00600
+__ptext1                         text1        00C3A
+__ptext10                        text10       00C73
+__ptext11                        text11       00CA2
+__ptext12                        text12       00E6F
+__ptext13                        text13       00183
+__ptext14                        text14       003E8
+__ptext15                        text15       00C28
+__ptext16                        text16       00CD9
+__ptext17                        text17       006C9
+__ptext18                        text18       00C16
+__ptext19                        text19       00D99
+__ptext2                         text2        00668
+__ptext20                        text20       007D6
+__ptext21                        text21       00F09
+__ptext22                        text22       005F3
+__ptext24                        text24       00EBB
+__ptext25                        text25       00D56
+__ptext26                        text26       0053F
+__ptext27                        text27       00DDF
+__ptext28                        text28       00FAC
+__ptext29                        text29       00C4F
+__ptext3                         text3        00333
+__ptext30                        text30       00F59
+__ptext31                        text31       00C0C
+__ptext4                         text4        00498
+__ptext5                         text5        00E27
+__ptext6                         text6        00782
+__ptext7                         text7        005DD
+__ptext8                         text8        00727
+__ptext9                         text9        00266
+__size_of_DS1307_ReadDate        (abs)        00000
+__size_of_DS1307_ReadTime        (abs)        00000
+__size_of_DS1307_SetTime         (abs)        00000
+__size_of_Debug                  (abs)        00000
+__size_of_I2C1_ReadFrame         (abs)        00000
+__size_of_I2C1_WriteByte         (abs)        00000
+__size_of_I2C1_WriteFrame        (abs)        00000
+__size_of_ISRRoutine             (abs)        00000
+__size_of_LCDBusyLoop            (abs)        00000
+__size_of_LCDByte                (abs)        00000
+__size_of_LCDGotoXY              (abs)        00000
+__size_of_LCDInit                (abs)        00000
+__size_of_LCDWriteInt            (abs)        00000
+__size_of_LCDWriteString         (abs)        00000
+__size_of_SetUpDevice            (abs)        00000
+__size_of_ShowDate               (abs)        00000
+__size_of_ShowTime               (abs)        00000
+__size_of___awdiv                (abs)        00000
+__size_of___awmod                (abs)        00000
+__size_of___bmul                 (abs)        00000
+__size_of___lwdiv                (abs)        00000
+__size_of___lwmod                (abs)        00000
+__size_of_i2c_init               (abs)        00000
+__size_of_main                   (abs)        00000
+__size_ofi1_LCDBusyLoop          (abs)        00000
+__size_ofi1_LCDByte              (abs)        00000
+__size_ofi1_LCDGotoXY            (abs)        00000
+__size_ofi1_LCDWriteInt          (abs)        00000
+__size_ofi1_LCDWriteString       (abs)        00000
+__size_ofi1_ShowTime             (abs)        00000
+__size_ofi1___awdiv              (abs)        00000
+__size_ofi1___awmod              (abs)        00000
+__stringdata                     strings      00603
+__stringtab                      strings      00600
+_dan                             bssBANK0     0004D
+_danusedmici                     bssBANK0     0004E
+_godina                          bssBANK0     0004F
+_i2c_init                        text1        00C3A
+_main                            maintext     0005A
+_mesec                           bssBANK0     00050
+_minute                          bssBANK0     00051
+_sati                            bssBANK0     00052
+_sekunde                         bssBANK0     00053
+btemp                            (abs)        0007E
+clear_ram0                       clrtext      007FA
+end_of_initialization            cinit        00057
+i1LCDByte@c                      cstackCOMMON 00077
+i1LCDByte@hn                     cstackCOMMON 00075
+i1LCDByte@isdata                 cstackCOMMON 00072
+i1LCDByte@ln                     cstackCOMMON 00076
+i1LCDByte@temp                   cstackCOMMON 00078
+i1LCDGotoXY@x                    cstackCOMMON 0007B
+i1LCDGotoXY@y                    cstackCOMMON 00079
+i1LCDWriteInt@field_length       cstackCOMMON 0007B
+i1LCDWriteInt@i                  cstackBANK0  00027
+i1LCDWriteInt@j                  cstackBANK0  00025
+i1LCDWriteInt@str                cstackBANK0  00020
+i1LCDWriteInt@val                cstackCOMMON 00079
+i1LCDWriteString@cc              cstackCOMMON 0007A
+i1LCDWriteString@msg             cstackCOMMON 0007B
+i1ShowTime@clear                 cstackBANK0  0002A
+i1ShowTime@x                     cstackBANK0  0002E
+i1ShowTime@y                     cstackBANK0  00029
+i1_LCDBusyLoop                   text31       00C0C
+i1_LCDByte                       text30       00F59
+i1_LCDGotoXY                     text29       00C4F
+i1_LCDWriteInt                   text26       0053F
+i1_LCDWriteString                text25       00D56
+i1_ShowTime                      text24       00EBB
+i1___awdiv                       text28       00FAC
+i1___awdiv@counter               cstackCOMMON 00075
+i1___awdiv@dividend              cstackCOMMON 00072
+i1___awdiv@divisor               cstackCOMMON 00070
+i1___awdiv@quotient              cstackCOMMON 00077
+i1___awdiv@sign                  cstackCOMMON 00076
+i1___awmod                       text27       00DDF
+i1___awmod@counter               cstackCOMMON 00075
+i1___awmod@dividend              cstackCOMMON 00072
+i1___awmod@divisor               cstackCOMMON 00070
+i1___awmod@sign                  cstackCOMMON 00076
+init_ram                         inittext     00C06
+intlevel0                        functab      00000
+intlevel1                        functab      00000
+intlevel2                        functab      00000
+intlevel3                        functab      00000
+intlevel4                        functab      00000
+intlevel5                        functab      00000
+ltemp                            (abs)        0007E
+ltemp0                           (abs)        0007E
+ltemp1                           (abs)        00082
+ltemp2                           (abs)        00086
+ltemp3                           (abs)        00080
+reset_vec                        reset_vec    00000
+stackhi                          (abs)        0231F
+stacklo                          (abs)        020E0
+start                            init         00036
+start_initialization             cinit        00038
+ttemp                            (abs)        0007E
+ttemp0                           (abs)        0007E
+ttemp1                           (abs)        00081
+ttemp2                           (abs)        00084
+ttemp3                           (abs)        00087
+ttemp4                           (abs)        0007F
+wtemp                            (abs)        0007E
+wtemp0                           (abs)        0007E
+wtemp1                           (abs)        00080
+wtemp2                           (abs)        00082
+wtemp3                           (abs)        00084
+wtemp4                           (abs)        00086
+wtemp5                           (abs)        00088
+wtemp6                           (abs)        0007F
+
+
+FUNCTION INFORMATION:
+
+ *************** function _main *****************
+ Defined at:
+		line 53 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr1l, fsr1h, fsr1l, fsr1h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       4       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       4       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        4 bytes
+ Hardware stack levels required when called:   10
+ This function calls:
+		_DS1307_ReadDate
+		_DS1307_ReadTime
+		_DS1307_SetTime
+		_LCDByte
+		_LCDGotoXY
+		_LCDInit
+		_LCDWriteString
+		_SetUpDevice
+		_ShowDate
+		_ShowTime
+		_i2c_init
+ This function is called by:
+		Startup code after reset
+ This function uses a non-reentrant model
+
+
+ *************** function _i2c_init *****************
+ Defined at:
+		line 8 in file "i2cbysk.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		Nothing
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _ShowTime *****************
+ Defined at:
+		line 194 in file "main.c"
+ Parameters:    Size  Location     Type
+  x               1    wreg     unsigned char 
+  y               1   31[BANK0 ] unsigned char 
+  clear           1   32[BANK0 ] unsigned char 
+ Auto vars:     Size  Location     Type
+  x               1   33[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr1l, fsr1h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       2       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       1       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       3       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       3       3       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        6 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    8
+ This function calls:
+		_LCDByte
+		_LCDGotoXY
+		_LCDWriteInt
+		_LCDWriteString
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _ShowDate *****************
+ Defined at:
+		line 216 in file "main.c"
+ Parameters:    Size  Location     Type
+  x               1    wreg     unsigned char 
+  y               1   31[BANK0 ] unsigned char 
+  clear           1   32[BANK0 ] unsigned char 
+ Auto vars:     Size  Location     Type
+  x               1   33[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr1l, fsr1h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       2       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       1       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       3       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       3       3       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        6 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    8
+ This function calls:
+		_LCDByte
+		_LCDGotoXY
+		_LCDWriteInt
+		_LCDWriteString
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _LCDWriteInt *****************
+ Defined at:
+		line 313 in file "lcd_hd44780_pic16.c"
+ Parameters:    Size  Location     Type
+  val             2   26[BANK0 ] int 
+  field_length    1   28[BANK0 ] char 
+ Auto vars:     Size  Location     Type
+  str             5    0[BANK1 ] unsigned char [5]
+  i               2    7[BANK1 ] int 
+  j               2    5[BANK1 ] int 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr1l, fsr1h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       3       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       9       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       2       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       5       9       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:       14 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		_LCDByte
+		___awdiv
+		___awmod
+ This function is called by:
+		_ShowTime
+		_ShowDate
+ This function uses a non-reentrant model
+
+
+ *************** function ___awmod *****************
+ Defined at:
+		line 6 in file "C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\awmod.c"
+ Parameters:    Size  Location     Type
+  divisor         2   17[BANK0 ] int 
+  dividend        2   19[BANK0 ] int 
+ Auto vars:     Size  Location     Type
+  sign            1   23[BANK0 ] unsigned char 
+  counter         1   22[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  2   17[BANK0 ] int 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       4       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       1       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       7       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        7 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		Nothing
+ This function is called by:
+		_LCDWriteInt
+ This function uses a non-reentrant model
+
+
+ *************** function ___awdiv *****************
+ Defined at:
+		line 6 in file "C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\awdiv.c"
+ Parameters:    Size  Location     Type
+  divisor         2   17[BANK0 ] int 
+  dividend        2   19[BANK0 ] int 
+ Auto vars:     Size  Location     Type
+  quotient        2   24[BANK0 ] int 
+  sign            1   23[BANK0 ] unsigned char 
+  counter         1   22[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  2   17[BANK0 ] int 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       4       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       4       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       1       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       9       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        9 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		Nothing
+ This function is called by:
+		_LCDWriteInt
+ This function uses a non-reentrant model
+
+
+ *************** function _SetUpDevice *****************
+ Defined at:
+		line 142 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		Nothing
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _LCDInit *****************
+ Defined at:
+		line 199 in file "lcd_hd44780_pic16.c"
+ Parameters:    Size  Location     Type
+  style           1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  style           1   29[BANK0 ] unsigned char 
+  __i             1   30[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr1l, fsr1h, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       3       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       5       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        5 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		_LCDBusyLoop
+		_LCDByte
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _DS1307_SetTime *****************
+ Defined at:
+		line 58 in file "ds1307.c"
+ Parameters:    Size  Location     Type
+  Hours           2   25[BANK0 ] unsigned int 
+  Mins            2   27[BANK0 ] unsigned int 
+  Secs            2   29[BANK0 ] unsigned int 
+  Mode            2   31[BANK0 ] unsigned int 
+ Auto vars:     Size  Location     Type
+  Temp            4    5[BANK1 ] unsigned char [4]
+  result          1    4[BANK1 ] unsigned char 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr1l, fsr1h, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       8       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       5       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       4       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       8       9       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:       17 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		_I2C1_WriteFrame
+		___lwdiv
+		___lwmod
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function ___lwmod *****************
+ Defined at:
+		line 6 in file "C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\lwmod.c"
+ Parameters:    Size  Location     Type
+  divisor         2   17[BANK0 ] unsigned int 
+  dividend        2   19[BANK0 ] unsigned int 
+ Auto vars:     Size  Location     Type
+  counter         1   22[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  2   17[BANK0 ] unsigned int 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       4       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       1       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       1       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       6       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        6 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		Nothing
+ This function is called by:
+		_DS1307_SetTime
+		_DS1307_encodeTime
+		_DS1307_SetDate
+ This function uses a non-reentrant model
+
+
+ *************** function ___lwdiv *****************
+ Defined at:
+		line 6 in file "C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\lwdiv.c"
+ Parameters:    Size  Location     Type
+  divisor         2   17[BANK0 ] unsigned int 
+  dividend        2   19[BANK0 ] unsigned int 
+ Auto vars:     Size  Location     Type
+  quotient        2   23[BANK0 ] unsigned int 
+  counter         1   22[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  2   17[BANK0 ] unsigned int 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       4       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       3       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       1       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       8       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        8 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		Nothing
+ This function is called by:
+		_DS1307_SetTime
+		_DS1307_encodeTime
+		_DS1307_SetDate
+ This function uses a non-reentrant model
+
+
+ *************** function _I2C1_WriteFrame *****************
+ Defined at:
+		line 217 in file "i2cbysk.c"
+ Parameters:    Size  Location     Type
+  i2c1SlaveAdd    1    wreg     unsigned char 
+  i2c1WritePoi    1   17[BANK0 ] PTR unsigned char 
+		 -> DS1307_SetDate@Temp(5), DS1307_SetTime@Temp(4), 
+  i2c1FrameLen    1   18[BANK0 ] unsigned char 
+ Auto vars:     Size  Location     Type
+  i2c1SlaveAdd    1   20[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, fsr1l, fsr1h, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       2       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       1       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       1       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       4       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        4 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		Nothing
+ This function is called by:
+		_DS1307_SetTime
+		_DS1307_SetDate
+ This function uses a non-reentrant model
+
+
+ *************** function _DS1307_ReadTime *****************
+ Defined at:
+		line 80 in file "ds1307.c"
+ Parameters:    Size  Location     Type
+  SaveTimeTo      1    wreg     PTR volatile unsigned ch
+		 -> TimeArray(4), 
+ Auto vars:     Size  Location     Type
+  SaveTimeTo      1    5[BANK1 ] PTR volatile unsigned ch
+		 -> TimeArray(4), 
+  TempI2CRead     4    1[BANK1 ] unsigned char [4]
+  Temp            1    6[BANK1 ] unsigned char 
+  result          1    0[BANK1 ] unsigned char 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr1l, fsr1h, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       7       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       4       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       4       7       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:       11 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    9
+ This function calls:
+		_Debug
+		_I2C1_ReadFrame
+		_I2C1_WriteByte
+		___bmul
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _DS1307_ReadDate *****************
+ Defined at:
+		line 134 in file "ds1307.c"
+ Parameters:    Size  Location     Type
+  SaveDateTo      1    wreg     PTR volatile unsigned ch
+		 -> DateArray(5), 
+ Auto vars:     Size  Location     Type
+  SaveDateTo      1    5[BANK1 ] PTR volatile unsigned ch
+		 -> DateArray(5), 
+  TempI2CRead     4    1[BANK1 ] unsigned char [4]
+  Temp            1    6[BANK1 ] unsigned char 
+  result          1    0[BANK1 ] unsigned char 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr1l, fsr1h, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       7       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       4       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       4       7       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:       11 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    9
+ This function calls:
+		_Debug
+		_I2C1_ReadFrame
+		_I2C1_WriteByte
+		___bmul
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function ___bmul *****************
+ Defined at:
+		line 2 in file "C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\bmul.c"
+ Parameters:    Size  Location     Type
+  multiplier      1    wreg     unsigned char 
+  multiplicand    1   17[BANK0 ] unsigned char 
+ Auto vars:     Size  Location     Type
+  multiplier      1   20[BANK0 ] unsigned char 
+  product         1   19[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       1       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       1       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       4       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        4 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		Nothing
+ This function is called by:
+		_DS1307_ReadTime
+		_DS1307_ReadDate
+		_ds1307_decodeTime
+ This function uses a non-reentrant model
+
+
+ *************** function _I2C1_WriteByte *****************
+ Defined at:
+		line 304 in file "i2cbysk.c"
+ Parameters:    Size  Location     Type
+  i2c1SlaveAdd    1    wreg     unsigned char 
+  i2c1Data        1   17[BANK0 ] unsigned char 
+ Auto vars:     Size  Location     Type
+  i2c1SlaveAdd    1   18[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       1       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       1       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		Nothing
+ This function is called by:
+		_DS1307_ReadTime
+		_DS1307_ReadDate
+ This function uses a non-reentrant model
+
+
+ *************** function _I2C1_ReadFrame *****************
+ Defined at:
+		line 117 in file "i2cbysk.c"
+ Parameters:    Size  Location     Type
+  i2c1SlaveAdd    1    wreg     unsigned char 
+  i2c1ReadPoin    1   17[BANK0 ] PTR unsigned char 
+		 -> DS1307_ReadDate@TempI2CRead(4), DS1307_ReadTime@TempI2CRead(4), 
+  i2c1FrameLen    1   18[BANK0 ] unsigned char 
+ Auto vars:     Size  Location     Type
+  i2c1SlaveAdd    1   20[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, fsr1l, fsr1h, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       2       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       1       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       1       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       4       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        4 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		Nothing
+ This function is called by:
+		_DS1307_ReadTime
+		_DS1307_ReadDate
+ This function uses a non-reentrant model
+
+
+ *************** function _Debug *****************
+ Defined at:
+		line 188 in file "main.c"
+ Parameters:    Size  Location     Type
+  data            1    wreg     PTR unsigned char 
+		 -> STR_17(16), STR_16(16), 
+ Auto vars:     Size  Location     Type
+  data            1   29[BANK0 ] PTR unsigned char 
+		 -> STR_17(16), STR_16(16), 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       1       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       1       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    8
+ This function calls:
+		_LCDByte
+		_LCDGotoXY
+		_LCDWriteString
+ This function is called by:
+		_DS1307_ReadTime
+		_DS1307_ReadDate
+ This function uses a non-reentrant model
+
+
+ *************** function _LCDWriteString *****************
+ Defined at:
+		line 257 in file "lcd_hd44780_pic16.c"
+ Parameters:    Size  Location     Type
+  msg             1    wreg     PTR const unsigned char 
+		 -> STR_17(16), STR_16(16), STR_15(2), STR_14(2), 
+		 -> STR_13(2), STR_12(5), STR_11(5), STR_10(5), 
+		 -> STR_9(5), STR_8(5), STR_7(5), STR_6(5), 
+		 -> STR_5(2), STR_4(2), STR_3(17), STR_2(15), 
+		 -> STR_1(16), 
+ Auto vars:     Size  Location     Type
+  msg             1   28[BANK0 ] PTR const unsigned char 
+		 -> STR_17(16), STR_16(16), STR_15(2), STR_14(2), 
+		 -> STR_13(2), STR_12(5), STR_11(5), STR_10(5), 
+		 -> STR_9(5), STR_8(5), STR_7(5), STR_6(5), 
+		 -> STR_5(2), STR_4(2), STR_3(17), STR_2(15), 
+		 -> STR_1(16), 
+  cc              1   27[BANK0 ] char 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       1       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       3       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        3 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		_LCDByte
+ This function is called by:
+		_main
+		_Debug
+		_ShowTime
+		_ShowDate
+ This function uses a non-reentrant model
+
+
+ *************** function _LCDGotoXY *****************
+ Defined at:
+		line 358 in file "lcd_hd44780_pic16.c"
+ Parameters:    Size  Location     Type
+  x               1    wreg     unsigned char 
+  y               1   26[BANK0 ] unsigned char 
+ Auto vars:     Size  Location     Type
+  x               1   28[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       1       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       1       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       1       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       3       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        3 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		_LCDByte
+ This function is called by:
+		_main
+		_Debug
+		_ShowTime
+		_ShowDate
+ This function uses a non-reentrant model
+
+
+ *************** function _LCDByte *****************
+ Defined at:
+		line 82 in file "lcd_hd44780_pic16.c"
+ Parameters:    Size  Location     Type
+  c               1    wreg     unsigned char 
+  isdata          1   19[BANK0 ] unsigned char 
+ Auto vars:     Size  Location     Type
+  c               1   24[BANK0 ] unsigned char 
+  temp            1   25[BANK0 ] unsigned char 
+  ln              1   23[BANK0 ] unsigned char 
+  hn              1   22[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       1       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       4       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       2       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       7       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        7 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		_LCDBusyLoop
+ This function is called by:
+		_main
+		_Debug
+		_ShowTime
+		_ShowDate
+		_LCDInit
+		_LCDWriteString
+		_LCDWriteInt
+		_LCDGotoXY
+ This function uses a non-reentrant model
+
+
+ *************** function _LCDBusyLoop *****************
+ Defined at:
+		line 139 in file "lcd_hd44780_pic16.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       2       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		Nothing
+ This function is called by:
+		_LCDByte
+		_LCDInit
+ This function uses a non-reentrant model
+
+
+ *************** function _ISRRoutine *****************
+ Defined at:
+		line 273 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr1l, fsr1h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       2       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		i1_ShowTime
+ This function is called by:
+		Interrupt level 1
+ This function uses a non-reentrant model
+
+
+ *************** function i1_ShowTime *****************
+ Defined at:
+		line 194 in file "main.c"
+ Parameters:    Size  Location     Type
+  x               1    wreg     unsigned char 
+  y               1    9[BANK0 ] unsigned char 
+  clear           1   10[BANK0 ] unsigned char 
+ Auto vars:     Size  Location     Type
+  x               1   14[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr1l, fsr1h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       2       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       1       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       3       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       6       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        6 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		i1_LCDByte
+		i1_LCDGotoXY
+		i1_LCDWriteInt
+		i1_LCDWriteString
+ This function is called by:
+		_ISRRoutine
+ This function uses a non-reentrant model
+
+
+ *************** function i1_LCDWriteString *****************
+ Defined at:
+		line 257 in file "lcd_hd44780_pic16.c"
+ Parameters:    Size  Location     Type
+  msg             1    wreg     PTR const unsigned char 
+		 -> STR_17(16), STR_16(16), STR_15(2), STR_14(2), 
+		 -> STR_13(2), STR_12(5), STR_11(5), STR_10(5), 
+		 -> STR_9(5), STR_8(5), STR_7(5), STR_6(5), 
+		 -> STR_5(2), STR_4(2), STR_3(17), STR_2(15), 
+		 -> STR_1(16), 
+ Auto vars:     Size  Location     Type
+  msg             1   11[COMMON] PTR const unsigned char 
+		 -> STR_17(16), STR_16(16), STR_15(2), STR_14(2), 
+		 -> STR_13(2), STR_12(5), STR_11(5), STR_10(5), 
+		 -> STR_9(5), STR_8(5), STR_7(5), STR_6(5), 
+		 -> STR_5(2), STR_4(2), STR_3(17), STR_2(15), 
+		 -> STR_1(16), 
+  LCDWriteStri    1   10[COMMON] char 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          1       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         3       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        3 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		i1_LCDByte
+ This function is called by:
+		i1_ShowTime
+ This function uses a non-reentrant model
+
+
+ *************** function i1_LCDWriteInt *****************
+ Defined at:
+		line 313 in file "lcd_hd44780_pic16.c"
+ Parameters:    Size  Location     Type
+  val             2    9[COMMON] int 
+  field_length    1   11[COMMON] char 
+ Auto vars:     Size  Location     Type
+  LCDWriteInt     5    0[BANK0 ] unsigned char [5]
+  LCDWriteInt     2    7[BANK0 ] int 
+  LCDWriteInt     2    5[BANK0 ] int 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr1l, fsr1h, status,2, status,0, btemp+1, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         3       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       9       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          2       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         5       9       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:       14 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		i1_LCDByte
+		i1___awdiv
+		i1___awmod
+ This function is called by:
+		i1_ShowTime
+ This function uses a non-reentrant model
+
+
+ *************** function i1___awmod *****************
+ Defined at:
+		line 6 in file "C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\awmod.c"
+ Parameters:    Size  Location     Type
+  divisor         2    0[COMMON] int 
+  dividend        2    2[COMMON] int 
+ Auto vars:     Size  Location     Type
+  __awmod         1    6[COMMON] unsigned char 
+  __awmod         1    5[COMMON] unsigned char 
+ Return value:  Size  Location     Type
+                  2    0[COMMON] int 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         4       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          1       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         7       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        7 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		i1_LCDWriteInt
+ This function uses a non-reentrant model
+
+
+ *************** function i1___awdiv *****************
+ Defined at:
+		line 6 in file "C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\awdiv.c"
+ Parameters:    Size  Location     Type
+  divisor         2    0[COMMON] int 
+  dividend        2    2[COMMON] int 
+ Auto vars:     Size  Location     Type
+  __awdiv         2    7[COMMON] int 
+  __awdiv         1    6[COMMON] unsigned char 
+  __awdiv         1    5[COMMON] unsigned char 
+ Return value:  Size  Location     Type
+                  2    0[COMMON] int 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         4       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         4       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          1       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         9       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        9 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		i1_LCDWriteInt
+ This function uses a non-reentrant model
+
+
+ *************** function i1_LCDGotoXY *****************
+ Defined at:
+		line 358 in file "lcd_hd44780_pic16.c"
+ Parameters:    Size  Location     Type
+  x               1    wreg     unsigned char 
+  y               1    9[COMMON] unsigned char 
+ Auto vars:     Size  Location     Type
+  x               1   11[COMMON] unsigned char 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         1       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          1       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         3       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        3 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		i1_LCDByte
+ This function is called by:
+		i1_ShowTime
+ This function uses a non-reentrant model
+
+
+ *************** function i1_LCDByte *****************
+ Defined at:
+		line 82 in file "lcd_hd44780_pic16.c"
+ Parameters:    Size  Location     Type
+  c               1    wreg     unsigned char 
+  isdata          1    2[COMMON] unsigned char 
+ Auto vars:     Size  Location     Type
+  c               1    7[COMMON] unsigned char 
+  LCDByte         1    8[COMMON] unsigned char 
+  LCDByte         1    6[COMMON] unsigned char 
+  LCDByte         1    5[COMMON] unsigned char 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         1       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         4       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          2       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         7       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        7 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		i1_LCDBusyLoop
+ This function is called by:
+		i1_ShowTime
+		i1_LCDWriteString
+		i1_LCDWriteInt
+		i1_LCDGotoXY
+ This function uses a non-reentrant model
+
+
+ *************** function i1_LCDBusyLoop *****************
+ Defined at:
+		line 139 in file "lcd_hd44780_pic16.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          2       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		i1_LCDByte
+ This function uses a non-reentrant model
+
+
+
+MODULE INFORMATION
+
+Module		Function		Class		Link	Load	Size
+C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\lwdiv.c
+		___lwdiv       		CODE           	0CA2	0000	55
+
+C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\lwdiv.c estimated size: 55
+
+shared
+		i1_ShowTime    		CODE           	0EBB	0000	78
+		__stringtab    		STRING         	0600	0000	1
+		__stringdata   		STRING         	0603	0000	101
+		i1_LCDGotoXY   		CODE           	0C4F	0000	36
+		i1___awdiv     		CODE           	0FAC	0000	84
+		i1_LCDByte     		CODE           	0F59	0000	83
+		__initializatio		CODE           	0038	0000	31
+		_RTCStart      		STRING         	0601	0000	2
+		i1___awmod     		CODE           	0DDF	0000	72
+		i1_LCDBusyLoop 		CODE           	0C0C	0000	10
+		i1_LCDWriteStri		CODE           	0D56	0000	67
+		i1_LCDWriteInt 		CODE           	053F	0000	158
+
+shared estimated size: 723
+
+lcd_hd44780_pic16.c
+		_LCDByte       		CODE           	0F09	0000	80
+		_LCDWriteInt   		CODE           	0498	0000	167
+		_LCDInit       		CODE           	0727	0000	91
+		_LCDWriteString		CODE           	0D99	0000	70
+		_LCDGotoXY     		CODE           	07D6	0000	36
+		_LCDBusyLoop   		CODE           	05F3	0000	11
+
+lcd_hd44780_pic16.c estimated size: 455
+
+main.c
+		_ShowDate      		CODE           	0333	0000	181
+		_main          		CODE           	005A	0000	297
+		_ISRRoutine    		CODE           	0004	0000	50
+		_SetUpDevice   		CODE           	05DD	0000	22
+		_ShowTime      		CODE           	0668	0000	97
+		_Debug         		CODE           	0C16	0000	18
+
+main.c estimated size: 665
+
+ds1307.c
+		_DS1307_ReadDat		CODE           	03E8	0000	176
+		_DS1307_ReadTim		CODE           	0183	0000	227
+		_DS1307_SetTime		CODE           	0266	0000	205
+
+ds1307.c estimated size: 608
+
+C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\bmul.c
+		___bmul        		CODE           	0C28	0000	18
+
+C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\bmul.c estimated size: 18
+
+C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\awmod.c
+		___awmod       		CODE           	0E27	0000	72
+
+C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\awmod.c estimated size: 72
+
+C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\lwmod.c
+		___lwmod       		CODE           	0C73	0000	47
+
+C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\lwmod.c estimated size: 47
+
+i2cbysk.c
+		_I2C1_WriteFram		CODE           	0E6F	0000	76
+		_I2C1_ReadFrame		CODE           	06C9	0000	94
+		_i2c_init      		CODE           	0C3A	0000	21
+		_I2C1_WriteByte		CODE           	0CD9	0000	61
+
+i2cbysk.c estimated size: 252
+
+C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\awdiv.c
+		___awdiv       		CODE           	0782	0000	84
+
+C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\awdiv.c estimated size: 84
+
