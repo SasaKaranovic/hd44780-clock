@@ -4,16 +4,17 @@ Simple Small Bedroom Clock
 See short demo
 --------------
 Simple Small Bedroom Clock in action on [Youtube](http://youtu.be/bC-QjfINahU)
+Post on my [website](http://sasakaranovic.com/projects/build-small-bedroom-clock-from-scratch-in-under-4hours/)
 
 
 Before we start...
 --------------
 I wanted to make this project for myself, and since this is very simple project, I placed a challenge to complete it in shortest time possible and make it work as I intended to. 
 From idea to finished product it took about 4-5 hours, including designing schematic, routing PCB and making it, programming the device and etc.
-What is important is that finished product works like I want it to do, and could be used as opportunity to learn something about other platforms different from some that are spamming us 24/7 like Arduino.
-Don't get me wrong, Arduino is great and all, but why would you pay 10-15$ for Arduino + LCD and other parts, when you can build it yourself for 4-5$.
+What is important is that finished product works like I want it to do, and it could be used as opportunity to learn something about other platforms different from some that are spamming us 24/7 like Arduino.
+Don't get me wrong, Arduino is great and all but sometimes I want to build something for myself from scratch. :)
 
-One thing I want to ask you is to share your opinion, how to make this project better, what would you add/remove, did you use it? Did you like it? Did you make/modify it? Share it with us!
+One thing I want to ask you all is to share your opinion, how to make this project better, what would you add/remove, did you use it? Did you like it? Did you make/modify it? Share it with us!
 
 
 Structure
