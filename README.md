@@ -1,11 +1,16 @@
-Simple Small Bedside clock
+Simple Small Bedroom Clock
 ==============
+
+See short demo
+--------------
+Simple Small Bedroom Clock in action on [Youtube](http://youtu.be/bC-QjfINahU)
+
 
 Before we start...
 --------------
 I wanted to make this project for myself, and since this is very simple project, I placed a challenge to complete it in shortest time possible and make it work as I intended to. 
 From idea to finished product it took about 4-5 hours, including designing schematic, routing PCB and making it, programming the device and etc.
-So this project may not be perfect in any way but it **works**, and could be used as oppurtunity to learn something about other platforms diferent from Arduino.
+What is important is that finished product works like I want it to do, and could be used as opportunity to learn something about other platforms different from some that are spamming us 24/7 like Arduino.
 Don't get me wrong, Arduino is great and all, but why would you pay 10-15$ for Arduino + LCD and other parts, when you can build it yourself for 4-5$.
 
 One thing I want to ask you is to share your opinion, how to make this project better, what would you add/remove, did you use it? Did you like it? Did you make/modify it? Share it with us!
@@ -23,9 +28,9 @@ Structure
 -- Images of the finished product, this is how it looks when it's done and fired up!
 
 
-What does this project have that others dont?
+What does this project have that others don't?
 --------------
-Well, most likely nothing. I bet all of you have seen LCD displays, RTCs and etc used in many many projects before. So this project isn't special in any way. I made it public so anyone who wants to make this clock or project similair to this one, doesn't have to start from scratch, you can use my project and edit it to suit your needs. Also as a community we can make it better for all of us.
+Well, most likely nothing. I bet all of you have seen LCD displays, RTCs and etc used in many many projects before. So this project isn't special in any way. I made it public so anyone who wants to make this clock or project similar to this one, doesn't have to start from scratch, you can use my project and edit it to suit your needs. Also as a community we can make it better for all of us.
 
 Features
 --------------
@@ -33,7 +38,7 @@ Some of the features are
 - Open source
 - **Very low price of components**
 - Widely available components
-- RTC (so you don't loose time if you unpower the device for some period of time)
+- RTC (so you don't loose time if you power off the device for some period of time)
 - Small footprint
 - **You can make it by your own**
 - You can customize it to look whatever you like...
@@ -50,6 +55,6 @@ Core components of this project are:
 
 Why did I make this project and what it is about?
 --------------
-So how many of you like to sleep in completely dark room? Blinds closed, no light comming in at all... Well I can sleep in whatever conditinos, but my wife likes to sleep in pitch black room.
-It's ok and all but it makes it impossible to see the clock on the wall. If you get digital one with backlight and place it on wall, then it's too bright. If I try to use my phone, I usally drop it from the bed/bedside table 2-3 times before I find unlock button and wake everyone while doing it...
-So what did I doo? I made a small clock with backlight, that I can place by the bed, on the floor and I will be able to see what time it is and on the same time, it isn't bright enough to prevent my better half from sleeping.
+So how many of you like to sleep in completely dark room? Blinds closed, no light coming in at all... Well I can sleep in whatever conditions, but my wife likes to sleep in pitch black room.
+It's OK and all but it makes it impossible to see the clock on the wall. If you get digital one with back-light and place it on wall, then it's too bright. If I try to use my phone, I usually drop it from the bed/bedroom table 2-3 times before I find unlock button and wake everyone while doing it...
+So what did I do? I made a small clock with back-light, that I can place by the bed, on the floor and I will be able to see what time it is and on the same time, it isn't bright enough to prevent my better half from sleeping.
