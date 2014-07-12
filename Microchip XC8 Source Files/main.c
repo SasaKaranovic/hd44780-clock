@@ -5,7 +5,6 @@
  * Created on July 4, 2014, 3:30 PM
  */
 
-//Get rid of those ugly unable to resolve __delay_ms, __delay_us errors that aren't exactly erros but bugs in IDE
 #define _XTAL_FREQ 32000000ULL
 
 #include "main.h"
@@ -39,10 +38,10 @@ unsigned char I2CTime[4] = {0,0,0,0};    //If using for write, I2CTime[0] must b
 volatile unsigned char TimeArray[4] = {0,0,0,0};  //This is the decoded time from I2CTime.
 volatile unsigned char DateArray[5] = {0,0,0,0,0};  //This is the decoded date from I2CTime.
 
-volatile unsigned char sati = 0;
-volatile unsigned char minute = 0;
-volatile unsigned char sekunde = 0;
-volatile unsigned char dan=0, mesec=0, godina=0, danusedmici=0;
+volatile unsigned char hours = 0;
+volatile unsigned char minutes = 0;
+volatile unsigned char seconds = 0;
+volatile unsigned char day=0, month=0, year=0, dayoftheweek=0;
 volatile unsigned int Timer0Count = 0, RefreshTime=0;
 volatile unsigned char HourBlink = 1;
 volatile unsigned char FlagDateTimeChanged = 0;
@@ -64,26 +63,35 @@ void main() {
     __delay_ms(1000);
 
     LCDClear();
-    LCDWriteString("Sale voli Zanu");
+    LCDWriteString("Sale voli Zanu");		//This is your greeting message
     LCDGotoXY(0,1);
-    LCDWriteString("i malu bebicu :)");
+    LCDWriteString("i malu bebicu :)");		//and the second line
 
 
-    //I2C
     //I2C
     i2c_init();	// Initialize i2c pins
     __delay_ms(3000);
 
+	//4 lines of code below you can uncomment the first time you are initializing RTC 
+	//to se the date and time. After that you can comment them again.
+	
     //DS1307_SetTime(18, 26, 0, TwentyFourHoursMode);
     //__delay_ms(400);
 
     //DS1307_SetDate(10, 7, 14, 4);
     //__delay_ms(1000);
 
+	
+	//Read time and date on first start
     DS1307_ReadTime(&TimeArray);
     DS1307_ReadDate(&DateArray);
 
+	//Then display the time
+	//Start at 6th character of the 1st row (6-1=5, and 1-0=0), and clear the display before doing that
     ShowTime(5, 0, 1);
+	
+	//After that display the date
+	//Start at the 2nd character of the 2nd line (2-1=0), and keep the rest of the displays content.
     ShowDate(1, 1, 0);
 
 
@@ -92,41 +100,38 @@ void main() {
     INTCONbits.T0IE     = 1;
     INTCONbits.PEIE     = 1;
    
-
-    //LATCbits.LATC4 = 0;
-
     while(1) {
 
-        if(BTNHR == 0) {
-            sati   = TimeArray[2];
+        if(BTNHR == 0) {	//When Button HOUR is pressed
+            hours   = TimeArray[2];
             
-            if(sati < 23) { sati++; }
-            else { sati = 0; }
+            if(hours < 23) { hours++; }
+            else { hours = 0; }
 
-            DS1307_SetTime(sati, minute, 0, TwentyFourHoursMode);
+            DS1307_SetTime(hours, minutes, 0, TwentyFourHoursMode);
             DS1307_ReadTime(&TimeArray);
             ShowTime(5, 0, 0);
 
             __delay_ms(500);
          }
 
-         if(BTNMIN == 0) {
-             minute = TimeArray[1];
+         if(BTNMIN == 0) {		//When Button MINUTES is pressed
+             minutes = TimeArray[1];
              
-            if(minute < 59) { minute++; }
+            if(minutes < 59) { minutes++; }
             else {
-                minute = 0;
-                if(sati < 23) { sati++; }
-                else { sati = 0; }
+                minutes = 0;
+                if(hours < 23) { hours++; }
+                else { hours = 0; }
             }
 
-            DS1307_SetTime(sati, minute, 0, TwentyFourHoursMode);
+            DS1307_SetTime(hours, minutes, 0, TwentyFourHoursMode);
             DS1307_ReadTime(&TimeArray);
             ShowTime(5, 0, 0);
              __delay_ms(500);
          }
 
-        if(FlagDateTimeChanged == 1) {
+        if(FlagDateTimeChanged == 1) {		//Flag is set every 60 sec, so we read new time from RTC
            DS1307_ReadTime(&TimeArray);
            DS1307_ReadDate(&DateArray);
 
@@ -139,6 +144,11 @@ void main() {
     }
 }
 
+//This function sets-up internal oscillator and configures pins as input/output
+//Also configures Timer0 to use oscillator/4 as clock and run it trogh prescaler
+//If you need more info, just search PIC16F1825 datashet
+//Tip for searching: Every register or configuration bit in Microchip's documentation is described after :, so to
+//find what is OSCCON register don't search for "OSCCON", search for "OSCCON:" instead (notice the ":" !)
 void SetUpDevice() {
     //Configure Oscillator
     OSCCONbits.IRCF = 0b1110;
@@ -171,7 +181,7 @@ void SetUpDevice() {
     //Timer0 Config
     OPTION_REGbits.TMR0CS   = 0;        //0 = Internal instruction cycle clock (FOSC/4)
     OPTION_REGbits.PS       = 0b101;    //111 = 1 : 256
-    OPTION_REGbits.PSA      = 0;        //1 = Prescaler is not assigned to the Timer0 module
+    OPTION_REGbits.PSA      = 0;        //0 = Prescaler is assigned to the Timer0 module
 
     
     ANSELA = 0x00;
@@ -185,21 +195,27 @@ void SetUpDevice() {
 
 }
 
+//You can use this function to display strings on your LCD
+//It can make debugging a little easier
 void Debug(unsigned char *data) {
     LCDClear();
     LCDWriteStringXY(0,0, data);
 }
 
 
+//Display time on x,y on the LCD and if clear=1 then clear the display before displaying
+//Reminder: Lines/Rows start from 0, so if you want 1st row you need to send 0, not 1!
 void ShowTime(unsigned char x, unsigned char y, unsigned char clear)  {
-    sati   = TimeArray[2];
-    minute = TimeArray[1];
+    hours   = TimeArray[2];
+    minutes = TimeArray[1];
 
+	//If clear is set, then clear the LCD before doing anything
     if(clear) { LCDClear(); }
 
-    LCDGotoXY(x,y);
-    LCDWriteInt(sati, 2);
+    LCDGotoXY(x,y);				//Go to x,y position and place cursor
+    LCDWriteInt(hours, 2);		//Write hours and padd it to two places so we get xx for dates >= 10 and 0x for <10
 
+	//We check if the : between hours and minutes should be visible or not (so we see it blinking every ~1s)
     if(HourBlink == 1) {
         LCDWriteString(":");
         HourBlink = 0;
@@ -209,67 +225,71 @@ void ShowTime(unsigned char x, unsigned char y, unsigned char clear)  {
         HourBlink = 1;
     }
 
-    LCDWriteInt(minute, 2);
+    LCDWriteInt(minutes, 2);	//Write minutes and padd it to two places so we get xx for dates >= 10 and 0x for <10
 
 }
 
+//Display date on x,y on the LCD and if clear=1 then clear the display before displaying
+//Reminder: Lines/Rows start from 0, so if you want 1st row you need to send 0, not 1!
 void ShowDate(unsigned char x, unsigned char y, unsigned char clear)  {
-    danusedmici = DateArray[0];
-    dan         = DateArray[1];
-    mesec       = DateArray[2];
-    godina      = DateArray[3];
+    dayoftheweek 	= DateArray[0];
+    day         	= DateArray[1];
+    month       	= DateArray[2];
+    year      		= DateArray[3];
 
-
+	//If clear is set, then clear the LCD before doing anything
     if(clear) { LCDClear(); }
 
     LCDGotoXY(x,y);
 
-    switch (danusedmici) {
+	//Determen what day it is based on the number from 1-7 (that we read from RTC)
+    switch (dayoftheweek) {
         case 1:
-            LCDWriteString("Pon ");
+            LCDWriteString("Mon ");
             break;
 
         case 2:
-            LCDWriteString("Uto ");
+            LCDWriteString("Tue ");
             break;
 
         case 3:
-            LCDWriteString("Sre ");
+            LCDWriteString("Wed ");
             break;
 
         case 4:
-            LCDWriteString("Cet ");
+            LCDWriteString("Thu ");
             break;
 
         case 5:
-            LCDWriteString("Pet ");
+            LCDWriteString("Fri ");
             break;
 
         case 6:
-            LCDWriteString("Sub ");
+            LCDWriteString("Sat ");
             break;
 
         case 7:
-            LCDWriteString("Ned ");
+            LCDWriteString("Sun ");
             break;
 
         default:
             break;
     }
 
-
-    LCDWriteInt(dan, 2);
-
-    LCDWriteString(".");
-    LCDWriteInt(mesec, 2);
-
-    LCDWriteString(".");
-    LCDWriteInt(godina, 2);
-    LCDWriteString(".");
+	
+    LCDWriteInt(day, 2);	//Write day and padd it to two places so we get xx for dates >= 10 and 0x for <10
+    LCDWriteString(".");	//Write . after the day
+    LCDWriteInt(month, 2);	//Write month and padd it to two places so we get xx for dates >= 10 and 0x for <10
+    LCDWriteString(".");	//Write . month the day
+    LCDWriteInt(year, 2);	//Write year and padd it to two places so we get xx for dates >= 10 and 0x for <10
+    LCDWriteString(".");	//Write . month the day
 }
 
 
 
+//This is the interrupt routine, we use only Timer0 interrupt so we handle it inside this function.
+//If you want to have UART, PIN change or any other interrupt, you would put it inside this function
+//but below/abow Timer0's if() {} part of the code. Check the XC8 compiler manual for more info.
 void interrupt ISRRoutine(void)
 {
     //Timer0 Interrupt
@@ -291,18 +311,6 @@ void interrupt ISRRoutine(void)
             //DS1307_ReadTime(&TimeArray);
 
             FlagDateTimeChanged = 1;
-
-            //ShowTime(5, 0, 1);
-
-//            if(sati == 0 && minute == 0 && sekunde == 0 && FlagDateTimeChanged == 0) {
-//                DS1307_ReadDate(&DateArray);
-//                ShowDate(2, 1, 0);
-//                FlagDateTimeChanged = 1;
-//            }
-//            else {
-//                FlagDateTimeChanged = 0;
-//            }
-//
             RefreshTime = 0;
         }
 
