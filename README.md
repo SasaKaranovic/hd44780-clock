@@ -3,8 +3,16 @@ Simple Small Bedroom Clock
 
 See short demo
 --------------
-Simple Small Bedroom Clock in action on [Youtube](http://youtu.be/bC-QjfINahU)
+Simple Small Bedroom Clock in action on [YouTube](http://youtu.be/bC-QjfINahU)
 Post on my [website](http://sasakaranovic.com/projects/build-small-bedroom-clock-from-scratch-in-under-4hours/)
+
+
+[Update] Firmware v2
+--------------
+Since a lot of people asked me if I could adjust the firmware to have the option cycle trough hour, min, day, month, year changing. So now in firmware v2, when you press the H button, it will cycle trough hour, min, day, month, year and indicate current selection with ">" or "<". The M button will increase the selected value by 1. After you cycle trough all 6 fields, the ">" and "<" indicators will disappear and the new time/date will be set (stored in RTC).
+Since this was the one day project from the begging, don't expect crystal clear comments and perfect code, but I'm sure most of you will easily understand it since nothing too complex is going on there.
+
+Thank you for your interest in this project and like always, your feedback is greatly appreciated!
 
 
 Before we start...
@@ -23,7 +31,7 @@ Structure
 -- Collection of datasheets of all components used in this project so you can check and see how things work and how they are set-up.
 - Electronic Schematics
 -- Schematic of the whole project in JPG format and PCB and Silkscreen so you can see the dimensions of the finished PCB and how components are placed around the PCB.
-- Microchip XC8 Source Files
+- Microchip XC8 Firmware
 -- C source files for PIC16F1825 MCU. Containing complete MPlab X project with all source codes, libraries and etc
 - Finished product images
 -- Images of the finished product, this is how it looks when it's done and fired up!
@@ -48,7 +56,7 @@ Some of the features are
 Components used
 --------------
 Core components of this project are:
-- Microchip PIC16F1825 microcontroller
+- Microchip PIC16F1825 Microcontroller
 - HD44780 LCD 2x16 display
 - DS1307 RTCC
 - LM2596 Switching mode voltage regulator
